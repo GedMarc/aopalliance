@@ -16,25 +16,25 @@ import org.aopalliance.aop.Advice;
  * class DebuggingInterceptor implements MethodInterceptor,
  *     ConstructorInterceptor, FieldInterceptor {
  *
- *   @Override
+ *
  *   Object invoke(MethodInvocation i) throws Throwable {
  *     debug(i.getMethod(), i.getThis(), i.getArgs());
  *     return i.proceed();
  *   }
  *
- *   @Override
+ *
  *   Object construct(ConstructorInvocation i) throws Throwable {
  *     debug(i.getConstructor(), i.getThis(), i.getArgs());
  *     return i.proceed();
  *   }
  *
- *   @Override
+ *
  *   Object get(FieldAccess fa) throws Throwable {
  *     debug(fa.getField(), fa.getThis(), null);
  *     return fa.proceed();
  *   }
  *
- *   @Override
+ *
  *   Object set(FieldAccess fa) throws Throwable {
  *     debug(fa.getField(), fa.getThis(), fa.getValueToSet());
  *     return fa.proceed();
