@@ -24,6 +24,7 @@ package org.aopalliance.intercept;
  *
  * @author daniel lee
  */
+@FunctionalInterface
 public interface MethodInterceptor extends Interceptor {
 
     /**
